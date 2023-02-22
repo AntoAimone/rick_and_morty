@@ -1,6 +1,6 @@
 import Card from './Card';
 
- function Cards({characters}) { //character es un [] de {}, 
+ function Cards({characters, onClose}) { //character es un [] de {}, 
    
    return (
       <div>
@@ -12,7 +12,7 @@ import Card from './Card';
             species={species}
             gender={gender}
             image= {image}
-            onClose={() => window.alert('Emulamos que se cierra la card')}
+            onClose={() => onClose(id)}
             />
          })
       }
