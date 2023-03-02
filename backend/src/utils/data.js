@@ -22,7 +22,7 @@ const characters = [
   },
 ];
 
-export const Rick = {
+module.export = Rick = {
   id: 1,
   name: "Rick Sanchez",
   species: "Human",
@@ -30,4 +30,4 @@ export const Rick = {
   image: "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
 };
 
-export default characters;
+module.export = characters;

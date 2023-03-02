@@ -13,6 +13,7 @@ import Card from './Card';
             gender={gender}
             image= {image}
             onClose={() => onClose(id)}
+            id= {id}
             />
          })
       }
