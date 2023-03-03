@@ -25,7 +25,32 @@ const Detail = ()=>{
 
     return(
         <div className={style.container}>
-            <h2>spy Detail</h2>
+           
+           <div>
+            <div>
+                <button>
+                    <Link to='/home' className={style.link}>Home</Link>
+                </button>
+                <h1>{character?.name}</h1>
+            </div>
+
+            <div className={style.detail}>
+                <div className={style.containerImg}>
+                    <img src={character?.image} alt={character?.name} />
+                </div>
+            </div>
+
+            <div>
+                <label htmlFor="status">Status: </label>
+                <p>{character?.status}</p>
+                <label htmlFor="species">Species: </label>
+                <p>{character?.species}</p>
+                <label htmlFor="gender">Gender: </label>
+                <p>{character?.gender}</p>
+                <label htmlFor="origin">Origin: </label>
+                <p>{character?.origin?.name}</p>
+            </div>
+           </div>
         </div>
     )
 }

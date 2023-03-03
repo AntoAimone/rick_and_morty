@@ -4,7 +4,7 @@ const axios =require('axios');
 const getChardDetail = (res,id) => {
     axios(`https://rickandmortyapi.com/api/character/'${id}`)
     .then(response => response.data)
-    .the(data => {
+    .then(data => {
         let char={
             name:data.name,
             image:data.image,
